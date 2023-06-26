@@ -1,2 +1,2 @@
 # SystemVerilog-Design
-Projects from ECE474 and other samples
+This repository contains VLSI design samples in System Verilog, primarily from ECE474
