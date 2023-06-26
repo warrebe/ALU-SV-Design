@@ -1,0 +1,55 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : alu
+Version: L-2016.03-SP2
+Date   : Fri Apr 21 17:05:56 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: opcode[3] (input port)
+  Endpoint: alu_zero (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu                8000                  saed90nm_typ
+  alu_DW01_addsub_0  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  opcode[3] (in)                           0.00       0.00 r
+  U260/QN (INVX0)                          0.18       0.18 f
+  U259/Q (AND3X1)                          0.16       0.34 f
+  U239/QN (NAND2X0)                        0.16       0.50 r
+  U191/QN (NAND2X0)                        0.58       1.08 f
+  r24/ADD_SUB (alu_DW01_addsub_0)          0.00       1.08 f
+  r24/U8/Q (XOR2X1)                        0.24       1.32 r
+  r24/U1_0/CO (FADDX1)                     0.15       1.46 r
+  r24/U1_1/CO (FADDX1)                     0.14       1.60 r
+  r24/U1_2/CO (FADDX1)                     0.13       1.73 r
+  r24/U1_3/CO (FADDX1)                     0.13       1.86 r
+  r24/U1_4/CO (FADDX1)                     0.13       2.00 r
+  r24/U1_5/CO (FADDX1)                     0.13       2.13 r
+  r24/U1_6/CO (FADDX1)                     0.13       2.26 r
+  r24/U1_7/S (FADDX1)                      0.21       2.47 f
+  r24/SUM[7] (alu_DW01_addsub_0)           0.00       2.47 f
+  U188/QN (AOI222X1)                       0.24       2.70 r
+  U190/QN (NAND2X0)                        0.08       2.79 f
+  U253/Q (OR3X1)                           0.09       2.88 f
+  U252/QN (NOR4X0)                         0.08       2.96 r
+  alu_zero (out)                           0.00       2.96 r
+  data arrival time                                   2.96
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

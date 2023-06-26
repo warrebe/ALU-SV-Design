@@ -1,0 +1,8 @@
+analyze -format sverilog -lib WORK alu.sv
+elaborate alu -lib WORK
+compile
+report_timing > timing.txt
+report_area > area.txt
+report_hierarchy > hierarchy.txt
+write -hierarchy -format verilog -output alu.gate.v
+quit
